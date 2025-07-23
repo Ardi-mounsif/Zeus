@@ -16,9 +16,3 @@ with:
 workflow: "1"
 env: # Or as an environment variable
 N8N ENCRYPTION KEY: ${{ secrets.N8N_ENCRYPTION_KEY }}
-
-YaU, 3 hours ago
-
-Also trigger un PR opel
-
-id: n8n
