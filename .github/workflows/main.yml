@@ -1,0 +1,24 @@
+on :
+push:
+jobs:
+run n8n workflow:
+runs-on: ubuntu-latest
+name: Run In8n .Workflow
+steps:
+# To use this repository's private action,
+# you must check out the repository
+- name: Checkout
+uses: actions/checkout@v2
+name: Run n8n Workflow
+uses: ./ #Uses an action in the root directory
+
+with:
+workflow: "1"
+env: # Or as an environment variable
+N8N ENCRYPTION KEY: ${{ secrets.N8N_ENCRYPTION_KEY }}
+
+YaU, 3 hours ago
+
+Also trigger un PR opel
+
+id: n8n
